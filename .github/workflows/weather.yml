@@ -2,7 +2,7 @@ name: Weather Notification
 
 on:
   schedule:
-    - cron: "0 1 * * *"
+    - cron: "0 10 * * *"
 
   workflow_dispatch:
 
@@ -29,4 +29,4 @@ jobs:
           TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
           TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
         run: |
-          python weather_bot.py
+          python main.py

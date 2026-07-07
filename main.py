@@ -36,7 +36,7 @@ if will_rain:
 else:
     client = Client(account_sid,auth_token)
     message = client.messages.create(
-    body="It not going to rain today just enjoy your day .Don't need to bring an umbrella ☂️",
+    body="It's not going to rain today just enjoy your day .Don't need to bring an umbrella ☂️",
     from_="+15076936046",
     to="+61405422327",
     )
